@@ -68,21 +68,13 @@
     "",
     "",
     {
-      "c": "#7fa580",
+      "c": "#c87e74",
       "a": 4
     },
-    "Prev\n\n\n\n\n\nApp",
-    {
-      "c": "#cccccc",
-      "a": 7
-    },
-    "",
-    "",
-    {
-      "c": "#7fa580",
-      "a": 4
-    },
-    "Next\n\n\n\n\n\nApp",
+    "Select\n←\n\n\n\n\nLine",
+    "Select\n←\n\n\n\n\nWord",
+    "Select\n→\n\n\n\n\nWord",
+    "Select\n→\n\n\n\n\nLine",
     {
       "c": "#cccccc",
       "a": 7
@@ -112,19 +104,13 @@
     "",
     "",
     {
-      "c": "#7fa580",
+      "c": "#c87e74",
       "a": 4
     },
-    "Prev\n\n\n\n\n\nTab",
-    {
-      "c": "#c87e74"
-    },
-    "Scroll\n\n\n\n\n\n↓",
-    "Scroll\n\n\n\n\n\n↑",
-    {
-      "c": "#7fa580"
-    },
-    "Next\n\n\n\n\n\nTab",
+    "Select\n←\n\n\n\n\nChar",
+    "Select\n↓\n\n\n\n\nChar",
+    "Select\n↑\n\n\n\n\nChar",
+    "Select\n→\n\n\n\n\nChar",
     {
       "c": "#cccccc",
       "a": 7
@@ -145,7 +131,7 @@
   ],
   [
     {
-      "c": "#00589f",
+      "c": "#727474",
       "a": 4,
       "w": 2.25
     },
@@ -165,18 +151,26 @@
     },
     "",
     "",
-    "",
     {
-      "c": "#5d437e",
+      "c": "#e5a100",
       "a": 4
     },
-    "Move\n↓\n\n\n\n\nLine",
-    "Move\n↑\n\n\n\n\nLine",
+    "Del\n←\n\n\n\n\nLine",
     {
       "c": "#cccccc",
       "a": 7
     },
     "",
+    "",
+    {
+      "c": "#e5a100",
+      "a": 4
+    },
+    "Del\n→\n\n\n\n\nLine",
+    {
+      "c": "#cccccc",
+      "a": 7
+    },
     "",
     {
       "c": "#727474",
@@ -203,6 +197,7 @@
     },
     "Option",
     {
+      "c": "#00589f",
       "w": 1.25
     },
     "Cmd",
