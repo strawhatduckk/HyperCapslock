@@ -1,14 +1,14 @@
 ---
-title: Capslock Enhancement
-url: https://vonng.com/capslock.json
-version: 3.0.3
-maintainers: [ Vonng ]
+title: Hyper Capslock
+url: https://github.com/hellovietduc/HyperCapslock
+version: 3.1.0
+maintainers: [ Duc ]
 author: Vonng(rh@vonng.com)
-website: http://capslock.vonng.com
-json_url: https://vonng.com/capslock.json
-import_url: karabiner://karabiner/assets/complex_modifications/import?url=https://vonng.com/capslock.json
+website: https://github.com/hellovietduc/HyperCapslock
+json_url: https://github.com/hellovietduc/HyperCapslock/raw/master/mac_v3/capslock.json
+import_url: karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/hellovietduc/HyperCapslock/raw/master/mac_v3/capslock.json
 gallery_url: https://ke-complex-modifications.pqrs.org/#emulation-modes
-repo: https://github.com/Vonng/Capslock
+repo: https://github.com/hellovietduc/HyperCapslock
 
 
 rules:
