@@ -30,6 +30,8 @@ Capslock works on **ANSI** keyboards and similar layouts. It literally remaps ev
 
 These layout images are made with http://www.keyboard-layout-editor.com using these [JSON files](json).
 
+---
+
 > **[Control Planes](#Control-Planes)** are defined by combination of four extra left modifiers: <kbd>⌘</kbd><kbd>⌥</kbd><kbd>⌃</kbd><kbd>⇧</kbd>.This image shows the layout of control plane 0.
 
 |           Category            | Color  | Description                                                  |
