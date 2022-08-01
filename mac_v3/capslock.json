@@ -934,6 +934,26 @@
           ]
         },
         {
+          "description": "s = Logseq",
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Logseq"
+            }
+          ]
+        },
+        {
           "description": "f = Figma",
           "type": "basic",
           "from": {
