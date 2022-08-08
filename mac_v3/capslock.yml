@@ -525,6 +525,58 @@ rules:
         from: { key_code: page_down, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
         to: [ { key_code: volume_decrement, modifiers: [ left_shift, left_option ] } ]
 
+  ################################################################
+  #                    Hyper Programming                         #
+  ################################################################
+  - description: Hyper Programming
+    manipulators:
 
+      # open bracket
+      - description: '9 = ['
+        type: basic
+        from: { key_code: '9', modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: open_bracket } ]
+
+      # close bracket
+      - description: '0 = ]'
+        type: basic
+        from: { key_code: '0', modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: close_bracket } ]
+
+      # open curly bracket
+      - description: 'shift + 9 = {'
+        type: basic
+        from: { key_code: '9', modifiers: { mandatory: [left_shift, right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: open_bracket, modifiers: [left_shift] } ]
+
+      # close curly bracket
+      - description: 'shift + 0 = }'
+        type: basic
+        from: { key_code: '0', modifiers: { mandatory: [left_shift, right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: close_bracket, modifiers: [left_shift] } ]
+
+      # dash
+      - description: '; -> -'
+        type: basic
+        from: { key_code: semicolon, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: hyphen } ]
+
+      # underscore
+      - description: 'shift + ; -> _'
+        type: basic
+        from: { key_code: semicolon, modifiers: { mandatory: [left_shift, right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: hyphen, modifiers: [left_shift] } ]
+
+      # equal sign
+      - description: "' -> ="
+        type: basic
+        from: { key_code: quote, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: equal_sign } ]
+
+      # plus sign
+      - description: "shift + ' -> +"
+        type: basic
+        from: { key_code: quote, modifiers: { mandatory: [left_shift, right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: equal_sign, modifiers: [left_shift] } ]
 
 ...
