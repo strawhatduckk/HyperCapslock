@@ -300,17 +300,17 @@ rules:
         from: { key_code: t, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
         to: [ { key_code: equal_sign, modifiers: [left_shift] } ]
 
-      # open bracket
-      - description: 'a -> ['
+      # open curly brace
+      - description: 'a -> {'
         type: basic
         from: { key_code: a, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: open_bracket } ]
+        to: [ { key_code: open_bracket, modifiers: [left_shift] } ]
 
-      # close bracket
-      - description: 's -> ]'
+      # close curly brace
+      - description: 's -> }'
         type: basic
         from: { key_code: s, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: close_bracket } ]
+        to: [ { key_code: close_bracket, modifiers: [left_shift] } ]
 
       # open parenthesis
       - description: 'd -> ('
@@ -324,17 +324,17 @@ rules:
         from: { key_code: f, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
         to: [ { key_code: '0', modifiers: [left_shift] } ]
 
-      # open curly brace
-      - description: 'c -> {'
+      # open bracket
+      - description: 'c -> ['
         type: basic
         from: { key_code: c, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: open_bracket, modifiers: [left_shift] } ]
+        to: [ { key_code: open_bracket } ]
 
-      # close curly brace
-      - description: 'v -> }'
+      # close bracket
+      - description: 'v -> ]'
         type: basic
         from: { key_code: v, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: close_bracket, modifiers: [left_shift] } ]
+        to: [ { key_code: close_bracket } ]
 
 
   ################################################################

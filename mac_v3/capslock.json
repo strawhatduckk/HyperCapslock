@@ -940,7 +940,7 @@
           ]
         },
         {
-          "description": "a -> [",
+          "description": "a -> {",
           "type": "basic",
           "from": {
             "key_code": "a",
@@ -955,12 +955,15 @@
           },
           "to": [
             {
-              "key_code": "open_bracket"
+              "key_code": "open_bracket",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ]
         },
         {
-          "description": "s -> ]",
+          "description": "s -> }",
           "type": "basic",
           "from": {
             "key_code": "s",
@@ -975,7 +978,10 @@
           },
           "to": [
             {
-              "key_code": "close_bracket"
+              "key_code": "close_bracket",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ]
         },
@@ -1026,7 +1032,7 @@
           ]
         },
         {
-          "description": "c -> {",
+          "description": "c -> [",
           "type": "basic",
           "from": {
             "key_code": "c",
@@ -1041,15 +1047,12 @@
           },
           "to": [
             {
-              "key_code": "open_bracket",
-              "modifiers": [
-                "left_shift"
-              ]
+              "key_code": "open_bracket"
             }
           ]
         },
         {
-          "description": "v -> }",
+          "description": "v -> ]",
           "type": "basic",
           "from": {
             "key_code": "v",
@@ -1064,10 +1067,7 @@
           },
           "to": [
             {
-              "key_code": "close_bracket",
-              "modifiers": [
-                "left_shift"
-              ]
+              "key_code": "close_bracket"
             }
           ]
         }
