@@ -418,10 +418,10 @@
           ]
         },
         {
-          "description": "shift + u = command + shift + tab (prev application)",
+          "description": "shift + i = command + shift + tab (prev application)",
           "type": "basic",
           "from": {
-            "key_code": "u",
+            "key_code": "i",
             "modifiers": {
               "mandatory": [
                 "left_shift",
@@ -587,10 +587,10 @@
           ]
         },
         {
-          "description": "shift + p = command + tab (next application)",
+          "description": "shift + o = command + tab (next application)",
           "type": "basic",
           "from": {
-            "key_code": "p",
+            "key_code": "o",
             "modifiers": {
               "mandatory": [
                 "left_shift",
@@ -831,10 +831,53 @@
       ]
     },
     {
-      "description": "Hyper Application",
+      "description": "Hyper Special Characters",
       "manipulators": [
         {
-          "description": "e = Microsoft Edge",
+          "description": "q -> `",
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "grave_accent_and_tilde"
+            }
+          ]
+        },
+        {
+          "description": "w -> _",
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "e -> -",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -849,12 +892,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Microsoft Edge'"
+              "key_code": "hyphen"
             }
           ]
         },
         {
-          "description": "r = Finder",
+          "description": "r -> =",
           "type": "basic",
           "from": {
             "key_code": "r",
@@ -869,12 +912,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a finder"
+              "key_code": "equal_sign"
             }
           ]
         },
         {
-          "description": "t = iTerm",
+          "description": "t -> +",
           "type": "basic",
           "from": {
             "key_code": "t",
@@ -889,32 +932,15 @@
           },
           "to": [
             {
-              "shell_command": "open -a iTerm"
-            }
-          ]
-        },
-        {
-          "description": "y = Linear",
-          "type": "basic",
-          "from": {
-            "key_code": "y",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
+              "key_code": "equal_sign",
+              "modifiers": [
+                "left_shift"
               ]
             }
-          },
-          "to": [
-            {
-              "shell_command": "open -a Linear"
-            }
           ]
         },
         {
-          "description": "a = Microsoft Teams",
+          "description": "a -> [",
           "type": "basic",
           "from": {
             "key_code": "a",
@@ -929,12 +955,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Microsoft Teams'"
+              "key_code": "open_bracket"
             }
           ]
         },
         {
-          "description": "s = Logseq",
+          "description": "s -> ]",
           "type": "basic",
           "from": {
             "key_code": "s",
@@ -949,12 +975,35 @@
           },
           "to": [
             {
-              "shell_command": "open -a Logseq"
+              "key_code": "close_bracket"
             }
           ]
         },
         {
-          "description": "f = Figma",
+          "description": "d -> (",
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "9",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "f -> )",
           "type": "basic",
           "from": {
             "key_code": "f",
@@ -969,32 +1018,15 @@
           },
           "to": [
             {
-              "shell_command": "open -a Figma"
-            }
-          ]
-        },
-        {
-          "description": "g = Neat",
-          "type": "basic",
-          "from": {
-            "key_code": "g",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
+              "key_code": "0",
+              "modifiers": [
+                "left_shift"
               ]
             }
-          },
-          "to": [
-            {
-              "shell_command": "open -a Neat"
-            }
           ]
         },
         {
-          "description": "c = Chrome",
+          "description": "c -> {",
           "type": "basic",
           "from": {
             "key_code": "c",
@@ -1009,17 +1041,238 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Google Chrome'"
+              "key_code": "open_bracket",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ]
         },
         {
-          "description": "v = VS Code",
+          "description": "v -> }",
           "type": "basic",
           "from": {
             "key_code": "v",
             "modifiers": {
               "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "close_bracket",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Hyper Application",
+      "manipulators": [
+        {
+          "description": "command + e = Microsoft Edge",
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Microsoft Edge'"
+            }
+          ]
+        },
+        {
+          "description": "command + r = Finder",
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a finder"
+            }
+          ]
+        },
+        {
+          "description": "command + t = iTerm",
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a iTerm"
+            }
+          ]
+        },
+        {
+          "description": "command + y = Linear",
+          "type": "basic",
+          "from": {
+            "key_code": "y",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Linear"
+            }
+          ]
+        },
+        {
+          "description": "command + a = Microsoft Teams",
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Microsoft Teams'"
+            }
+          ]
+        },
+        {
+          "description": "command + s = Logseq",
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Logseq"
+            }
+          ]
+        },
+        {
+          "description": "command + f = Figma",
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Figma"
+            }
+          ]
+        },
+        {
+          "description": "command + g = Neat",
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Neat"
+            }
+          ]
+        },
+        {
+          "description": "command + c = Chrome",
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Google Chrome'"
+            }
+          ]
+        },
+        {
+          "description": "command + v = VS Code",
+          "type": "basic",
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
                 "right_command",
                 "right_control",
                 "right_shift",
@@ -1662,187 +1915,6 @@
               "modifiers": [
                 "left_shift",
                 "left_option"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Hyper Programming",
-      "manipulators": [
-        {
-          "description": "9 = [",
-          "type": "basic",
-          "from": {
-            "key_code": "9",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "open_bracket"
-            }
-          ]
-        },
-        {
-          "description": "0 = ]",
-          "type": "basic",
-          "from": {
-            "key_code": "0",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "close_bracket"
-            }
-          ]
-        },
-        {
-          "description": "shift + 9 = {",
-          "type": "basic",
-          "from": {
-            "key_code": "9",
-            "modifiers": {
-              "mandatory": [
-                "left_shift",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "open_bracket",
-              "modifiers": [
-                "left_shift"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "shift + 0 = }",
-          "type": "basic",
-          "from": {
-            "key_code": "0",
-            "modifiers": {
-              "mandatory": [
-                "left_shift",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "close_bracket",
-              "modifiers": [
-                "left_shift"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "; -> -",
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "hyphen"
-            }
-          ]
-        },
-        {
-          "description": "shift + ; -> _",
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": [
-                "left_shift",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "hyphen",
-              "modifiers": [
-                "left_shift"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "' -> =",
-          "type": "basic",
-          "from": {
-            "key_code": "quote",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "equal_sign"
-            }
-          ]
-        },
-        {
-          "description": "shift + ' -> +",
-          "type": "basic",
-          "from": {
-            "key_code": "quote",
-            "modifiers": {
-              "mandatory": [
-                "left_shift",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "equal_sign",
-              "modifiers": [
-                "left_shift"
               ]
             }
           ]

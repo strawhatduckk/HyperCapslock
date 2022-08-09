@@ -146,9 +146,9 @@ rules:
         to: [ { key_code: left_arrow , modifiers: [ left_shift,left_command ] } ]
 
       # shift: tab/win management
-      - description: 'shift + u = command + shift + tab (prev application)'
+      - description: 'shift + i = command + shift + tab (prev application)'
         type: basic
-        from: { key_code: u, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
+        from: { key_code: i, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
         to: [ { key_code: tab , modifiers: [ left_command, left_shift ] } ]
 
       # normal: cursor move
@@ -201,9 +201,9 @@ rules:
         to: [ { key_code: right_arrow , modifiers: [ left_shift,left_command ] } ]
 
       # shift: tab/win management
-      - description: 'shift + p = command + tab (next application)'
+      - description: 'shift + o = command + tab (next application)'
         type: basic
-        from: { key_code: p, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
+        from: { key_code: o, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
         to: [ { key_code: tab , modifiers: [ left_command ] } ]
 
       # normal: cursor move
@@ -264,6 +264,78 @@ rules:
         to: [ { key_code: delete_forward, modifiers: [ left_option ] } ]
 
 
+  ################################################################
+  #                  Hyper Special Characters                    #
+  ################################################################
+  - description: Hyper Special Characters
+    manipulators:
+
+      # grave
+      - description: 'q -> `'
+        type: basic
+        from: { key_code: 'q', modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: grave_accent_and_tilde } ]
+
+      # underscore
+      - description: 'w -> _'
+        type: basic
+        from: { key_code: 'w', modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: hyphen, modifiers: [left_shift] } ]
+
+      # dash
+      - description: 'e -> -'
+        type: basic
+        from: { key_code: 'e', modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: hyphen } ]
+
+      # equal sign
+      - description: 'r -> ='
+        type: basic
+        from: { key_code: 'r', modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: equal_sign } ]
+
+      # plus sign
+      - description: 't -> +'
+        type: basic
+        from: { key_code: t, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: equal_sign, modifiers: [left_shift] } ]
+
+      # open bracket
+      - description: 'a -> ['
+        type: basic
+        from: { key_code: a, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: open_bracket } ]
+
+      # close bracket
+      - description: 's -> ]'
+        type: basic
+        from: { key_code: s, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: close_bracket } ]
+
+      # open parenthesis
+      - description: 'd -> ('
+        type: basic
+        from: { key_code: d, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: '9', modifiers: [left_shift] } ]
+
+      # close parenthesis
+      - description: 'f -> )'
+        type: basic
+        from: { key_code: f, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: '0', modifiers: [left_shift] } ]
+
+      # open curly brace
+      - description: 'c -> {'
+        type: basic
+        from: { key_code: c, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: open_bracket, modifiers: [left_shift] } ]
+
+      # close curly brace
+      - description: 'v -> }'
+        type: basic
+        from: { key_code: v, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: close_bracket, modifiers: [left_shift] } ]
+
 
   ################################################################
   #                      Hyper Application                       #
@@ -273,85 +345,85 @@ rules:
 
 
       #==========================================================#
-      # ( e ) --> Microsoft Edge                                 #
+      # ( command + e ) --> Microsoft Edge                                 #
       #==========================================================#
-      - description: 'e = Microsoft Edge'
+      - description: 'command + e = Microsoft Edge'
         type: basic
-        from: { key_code: e, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        from: { key_code: e, modifiers: { mandatory: [left_command, right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a 'Microsoft Edge' } ]
 
 
       #==========================================================#
-      # ( r ) --> Finder                                         #
+      # ( command + r ) --> Finder                                         #
       #==========================================================#
-      - description: 'r = Finder'
+      - description: 'command + r = Finder'
         type: basic
-        from: { key_code: r, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        from: { key_code: r, modifiers: { mandatory: [left_command, right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a finder } ]
 
       #==========================================================#
-      # ( t ) --> iTerm                                          #
+      # ( command + t ) --> iTerm                                          #
       #==========================================================#
-      - description: 't = iTerm'
+      - description: 'command + t = iTerm'
         type: basic
-        from: { key_code: t, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        from: { key_code: t, modifiers: { mandatory: [left_command, right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a iTerm } ]
 
       #==========================================================#
-      # ( y ) --> Linear                                         #
+      # ( command + y ) --> Linear                                         #
       #==========================================================#
-      - description: 'y = Linear'
+      - description: 'command + y = Linear'
         type: basic
-        from: { key_code: y, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        from: { key_code: y, modifiers: { mandatory: [left_command, right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a Linear } ]
 
       #==========================================================#
-      # ( a ) --> Microsoft Teams                                #
+      # ( command + a ) --> Microsoft Teams                                #
       #==========================================================#
-      - description: 'a = Microsoft Teams'
+      - description: 'command + a = Microsoft Teams'
         type: basic
-        from: { key_code: a, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        from: { key_code: a, modifiers: { mandatory: [left_command, right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a 'Microsoft Teams' } ]
 
 
       #==========================================================#
-      # ( s ) --> Logseq                                         #
+      # ( command + s ) --> Logseq                                         #
       #==========================================================#
-      - description: 's = Logseq'
+      - description: 'command + s = Logseq'
         type: basic
-        from: { key_code: s, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        from: { key_code: s, modifiers: { mandatory: [left_command, right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a Logseq } ]
 
       #==========================================================#
-      # ( f ) --> Figma                                          #
+      # ( command + f ) --> Figma                                          #
       #==========================================================#
-      - description: 'f = Figma'
+      - description: 'command + f = Figma'
         type: basic
-        from: { key_code: f, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        from: { key_code: f, modifiers: { mandatory: [left_command, right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a Figma } ]
 
       #==========================================================#
-      # ( g ) --> Neat                                           #
+      # ( command + g ) --> Neat                                           #
       #==========================================================#
-      - description: 'g = Neat'
+      - description: 'command + g = Neat'
         type: basic
-        from: { key_code: g, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        from: { key_code: g, modifiers: { mandatory: [left_command, right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a Neat } ]
 
       #==========================================================#
-      # ( c ) --> Chrome                                         #
+      # ( command + c ) --> Chrome                                         #
       #==========================================================#
-      - description: 'c = Chrome'
+      - description: 'command + c = Chrome'
         type: basic
-        from: { key_code: c, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        from: { key_code: c, modifiers: { mandatory: [left_command, right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a 'Google Chrome' } ]
 
       #==========================================================#
-      # ( v ) --> VS Code                                        #
+      # ( command + v ) --> VS Code                                        #
       #==========================================================#
-      - description: 'v = VS Code'
+      - description: 'command + v = VS Code'
         type: basic
-        from: { key_code: v, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        from: { key_code: v, modifiers: { mandatory: [left_command, right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a 'Visual Studio Code' } ]
 
 
@@ -525,58 +597,5 @@ rules:
         from: { key_code: page_down, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
         to: [ { key_code: volume_decrement, modifiers: [ left_shift, left_option ] } ]
 
-  ################################################################
-  #                    Hyper Programming                         #
-  ################################################################
-  - description: Hyper Programming
-    manipulators:
-
-      # open bracket
-      - description: '9 = ['
-        type: basic
-        from: { key_code: '9', modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: open_bracket } ]
-
-      # close bracket
-      - description: '0 = ]'
-        type: basic
-        from: { key_code: '0', modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: close_bracket } ]
-
-      # open curly bracket
-      - description: 'shift + 9 = {'
-        type: basic
-        from: { key_code: '9', modifiers: { mandatory: [left_shift, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: open_bracket, modifiers: [left_shift] } ]
-
-      # close curly bracket
-      - description: 'shift + 0 = }'
-        type: basic
-        from: { key_code: '0', modifiers: { mandatory: [left_shift, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: close_bracket, modifiers: [left_shift] } ]
-
-      # dash
-      - description: '; -> -'
-        type: basic
-        from: { key_code: semicolon, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: hyphen } ]
-
-      # underscore
-      - description: 'shift + ; -> _'
-        type: basic
-        from: { key_code: semicolon, modifiers: { mandatory: [left_shift, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: hyphen, modifiers: [left_shift] } ]
-
-      # equal sign
-      - description: "' -> ="
-        type: basic
-        from: { key_code: quote, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: equal_sign } ]
-
-      # plus sign
-      - description: "shift + ' -> +"
-        type: basic
-        from: { key_code: quote, modifiers: { mandatory: [left_shift, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: equal_sign, modifiers: [left_shift] } ]
 
 ...
