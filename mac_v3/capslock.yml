@@ -92,7 +92,7 @@ rules:
 
 
       #==========================================================#
-      # ( k ) + ( ⌘⌥⇧⌃ )  -> ( up )                            #
+      # ( k ) + ( ⌘⌥⇧⌃ )  -> ( up )                              #
       #==========================================================#
       # command: selection
       - description: 'command + k = shift + up'
@@ -114,7 +114,7 @@ rules:
 
 
       #==========================================================#
-      # ( l ) + ( ⌘⌥⇧⌃ )  -> ( right )                            #
+      # ( l ) + ( ⌘⌥⇧⌃ )  -> ( right )                           #
       #==========================================================#
       # command: selection
       - description: 'command + l = shift + right'
@@ -137,7 +137,7 @@ rules:
 
 
       #==========================================================#
-      # ( u ) + ( ⌘⌥⇧⌃ )  -> ( Cmd + left )                          #
+      # ( u ) + ( ⌘⌥⇧⌃ )  -> ( Cmd + left )                      #
       #==========================================================#
       # command: line selection
       - description: 'command + u = cmd + shift + left'
@@ -345,16 +345,16 @@ rules:
 
 
       #==========================================================#
-      # ( command + e ) --> Microsoft Edge                                 #
+      # ( command + e ) --> Firefox                              #
       #==========================================================#
-      - description: 'command + e = Microsoft Edge'
+      - description: 'command + e = Firefox'
         type: basic
         from: { key_code: e, modifiers: { mandatory: [left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a 'Microsoft Edge' } ]
+        to: [ { shell_command: open -a Firefox } ]
 
 
       #==========================================================#
-      # ( command + r ) --> Finder                                         #
+      # ( command + r ) --> Finder                               #
       #==========================================================#
       - description: 'command + r = Finder'
         type: basic
@@ -362,7 +362,7 @@ rules:
         to: [ { shell_command: open -a finder } ]
 
       #==========================================================#
-      # ( command + t ) --> iTerm                                          #
+      # ( command + t ) --> iTerm                                #
       #==========================================================#
       - description: 'command + t = iTerm'
         type: basic
@@ -370,7 +370,7 @@ rules:
         to: [ { shell_command: open -a iTerm } ]
 
       #==========================================================#
-      # ( command + y ) --> Linear                                         #
+      # ( command + y ) --> Linear                               #
       #==========================================================#
       - description: 'command + y = Linear'
         type: basic
@@ -378,7 +378,7 @@ rules:
         to: [ { shell_command: open -a Linear } ]
 
       #==========================================================#
-      # ( command + a ) --> Microsoft Teams                                #
+      # ( command + a ) --> Microsoft Teams                      #
       #==========================================================#
       - description: 'command + a = Microsoft Teams'
         type: basic
@@ -387,7 +387,7 @@ rules:
 
 
       #==========================================================#
-      # ( command + s ) --> Logseq                                         #
+      # ( command + s ) --> Logseq                               #
       #==========================================================#
       - description: 'command + s = Logseq'
         type: basic
@@ -395,7 +395,7 @@ rules:
         to: [ { shell_command: open -a Logseq } ]
 
       #==========================================================#
-      # ( command + f ) --> Figma                                          #
+      # ( command + f ) --> Figma                                #
       #==========================================================#
       - description: 'command + f = Figma'
         type: basic
@@ -403,7 +403,7 @@ rules:
         to: [ { shell_command: open -a Figma } ]
 
       #==========================================================#
-      # ( command + g ) --> Neat                                           #
+      # ( command + g ) --> Neat                                 #
       #==========================================================#
       - description: 'command + g = Neat'
         type: basic
@@ -411,7 +411,7 @@ rules:
         to: [ { shell_command: open -a Neat } ]
 
       #==========================================================#
-      # ( command + c ) --> Chrome                                         #
+      # ( command + c ) --> Chrome                               #
       #==========================================================#
       - description: 'command + c = Chrome'
         type: basic
@@ -419,7 +419,7 @@ rules:
         to: [ { shell_command: open -a 'Google Chrome' } ]
 
       #==========================================================#
-      # ( command + v ) --> VS Code                                        #
+      # ( command + v ) --> VS Code                              #
       #==========================================================#
       - description: 'command + v = VS Code'
         type: basic

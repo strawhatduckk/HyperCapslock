@@ -1077,7 +1077,7 @@
       "description": "Hyper Application",
       "manipulators": [
         {
-          "description": "command + e = Microsoft Edge",
+          "description": "command + e = Firefox",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -1093,7 +1093,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Microsoft Edge'"
+              "shell_command": "open -a Firefox"
             }
           ]
         },
