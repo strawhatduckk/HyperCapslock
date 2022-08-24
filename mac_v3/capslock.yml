@@ -354,12 +354,12 @@ rules:
 
 
       #==========================================================#
-      # ( command + r ) --> Finder                               #
+      # ( command + r ) --> Marta                               #
       #==========================================================#
-      - description: 'command + r = Finder'
+      - description: 'command + r = Marta'
         type: basic
         from: { key_code: r, modifiers: { mandatory: [left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a finder } ]
+        to: [ { shell_command: open -a Marta } ]
 
       #==========================================================#
       # ( command + t ) --> iTerm                                #
