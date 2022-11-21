@@ -1925,10 +1925,15 @@
       "description": "Hyper App: Dash",
       "manipulators": [
         {
-          "description": "j = down",
+          "description": "shift + j = down",
           "type": "basic",
           "from": {
-            "key_code": "j"
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            }
           },
           "to": [
             {
@@ -1951,6 +1956,7 @@
             "key_code": "j",
             "modifiers": {
               "mandatory": [
+                "left_command",
                 "left_shift"
               ]
             }
@@ -1973,10 +1979,15 @@
           ]
         },
         {
-          "description": "k = up",
+          "description": "shift + k = up",
           "type": "basic",
           "from": {
-            "key_code": "k"
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            }
           },
           "to": [
             {
@@ -1999,6 +2010,7 @@
             "key_code": "k",
             "modifiers": {
               "mandatory": [
+                "left_command",
                 "left_shift"
               ]
             }
