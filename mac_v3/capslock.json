@@ -1077,7 +1077,7 @@
       "description": "Hyper Application",
       "manipulators": [
         {
-          "description": "command + e = Firefox",
+          "description": "command + e = Linear",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -1093,7 +1093,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a Firefox"
+              "shell_command": "open -a Linear"
             }
           ]
         },
@@ -1136,27 +1136,6 @@
           "to": [
             {
               "shell_command": "open -a iTerm"
-            }
-          ]
-        },
-        {
-          "description": "command + y = Linear",
-          "type": "basic",
-          "from": {
-            "key_code": "y",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a Linear"
             }
           ]
         },
@@ -1245,7 +1224,7 @@
           ]
         },
         {
-          "description": "command + c = Chrome",
+          "description": "command + c = Arc",
           "type": "basic",
           "from": {
             "key_code": "c",
@@ -1261,7 +1240,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Google Chrome'"
+              "shell_command": "open -a Arc"
             }
           ]
         },

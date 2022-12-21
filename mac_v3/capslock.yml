@@ -345,12 +345,12 @@ rules:
 
 
       #==========================================================#
-      # ( command + e ) --> Firefox                              #
+      # ( command + e ) --> Linear                               #
       #==========================================================#
-      - description: 'command + e = Firefox'
+      - description: 'command + e = Linear'
         type: basic
         from: { key_code: e, modifiers: { mandatory: [left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Firefox } ]
+        to: [ { shell_command: open -a Linear } ]
 
 
       #==========================================================#
@@ -368,14 +368,6 @@ rules:
         type: basic
         from: { key_code: t, modifiers: { mandatory: [left_command, right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a iTerm } ]
-
-      #==========================================================#
-      # ( command + y ) --> Linear                               #
-      #==========================================================#
-      - description: 'command + y = Linear'
-        type: basic
-        from: { key_code: y, modifiers: { mandatory: [left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Linear } ]
 
       #==========================================================#
       # ( command + a ) --> Microsoft Teams                      #
@@ -411,12 +403,12 @@ rules:
         to: [ { shell_command: open -a Neat } ]
 
       #==========================================================#
-      # ( command + c ) --> Chrome                               #
+      # ( command + c ) --> Arc                                  #
       #==========================================================#
-      - description: 'command + c = Chrome'
+      - description: 'command + c = Arc'
         type: basic
         from: { key_code: c, modifiers: { mandatory: [left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a 'Google Chrome' } ]
+        to: [ { shell_command: open -a Arc } ]
 
       #==========================================================#
       # ( command + v ) --> VS Code                              #
