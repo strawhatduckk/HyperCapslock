@@ -13,7 +13,7 @@ Capslock serves via  [**Karabiner-Elements**](https://karabiner-elements.pqrs.or
 
    ```yaml
    # Capslock Mac V3 (this repo)
-   karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/hellovietduc/HyperCapslock/raw/master/mac_v3/capslock.json
+   karabiner://karabiner/assets/complex_modifications/import?url=https://github.com/strawhatduckk/HyperCapslock/raw/master/mac_v3/capslock.json
    ```
 
 3. Launch Karabiner-Elements.  **Tab: ComplexModification** → **Button: Add Rules**, then enabled all rulesets.
