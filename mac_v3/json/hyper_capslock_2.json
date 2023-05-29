@@ -51,17 +51,17 @@
       "c": "#ebd400",
       "a": 4
     },
-    "Ms\n\n\n\n\n\nEdge",
-    "Finder",
-    "iTerm",
-    "Linear",
+    "Ms\n\n\nE\n\n\nEdge",
+    "Finder\n\n\nR",
+    "iTerm\n\n\nT",
+    "Linear\n\n\nY",
     {
       "c": "#c87e74"
     },
-    "Select\n←\n\n\n\n\nLine",
-    "Select\n←\n\n\n\n\nWord",
-    "Select\n→\n\n\n\n\nWord",
-    "Select\n→\n\n\n\n\nLine",
+    "Select\n←\n\nU\n\n\nLine",
+    "Select\n←\n\nI\n\n\nWord",
+    "Select\n→\n\nO\n\n\nWord",
+    "Select\n→\n\nP\n\n\nLine",
     {
       "c": "#cccccc",
       "a": 7
@@ -84,11 +84,11 @@
     {
       "c": "#ebd400"
     },
-    "Ms\n\n\n\n\n\nTeams",
+    "Ms\n\n\nA\n\n\nTeams",
     {
       "f": 2
     },
-    "Logseq",
+    "Logseq\n\n\nS",
     {
       "c": "#cccccc",
       "a": 7,
@@ -99,15 +99,15 @@
       "c": "#ebd400",
       "a": 4
     },
-    "Figma",
-    "Neat",
+    "Figma\n\n\nF",
+    "Neat\n\n\nG",
     {
       "c": "#c87e74"
     },
-    "Select\n←\n\n\n\n\nChar",
-    "Select\n↓\n\n\n\n\nChar",
-    "Select\n↑\n\n\n\n\nChar",
-    "Select\n→\n\n\n\n\nChar",
+    "Select\n←\n\nH\n\n\nChar",
+    "Select\n↓\n\nJ\n\n\nChar",
+    "Select\n↑\n\nK\n\n\nChar",
+    "Select\n→\n\nL\n\n\nChar",
     {
       "c": "#cccccc",
       "a": 7
@@ -138,11 +138,11 @@
       "a": 4,
       "f": 2
     },
-    "Chrome",
+    "Chrome\n\n\nC",
     {
       "f": 3
     },
-    "VS\n\n\n\n\n\nCode",
+    "VS\n\n\nV\n\n\nCode",
     {
       "c": "#cccccc",
       "a": 7
@@ -152,7 +152,7 @@
       "c": "#e5a100",
       "a": 4
     },
-    "Del\n←\n\n\n\n\nLine",
+    "Del\n←\n\nN\n\n\nLine",
     {
       "c": "#cccccc",
       "a": 7
@@ -163,7 +163,7 @@
       "c": "#e5a100",
       "a": 4
     },
-    "Del\n→\n\n\n\n\nLine",
+    "Del\n→\n\n>\n\n\nLine",
     {
       "c": "#cccccc",
       "a": 7
