@@ -45,18 +45,31 @@
       "w": 1.5
     },
     "",
-    "",
+    {
+      "c": "#ebd400",
+      "a": 4
+    },
+    "Linear\n\n\nQ",
+    "Figma\n\n\nW",
+    "iTerm\n\n\nE",
+    {
+      "c": "#cccccc",
+      "a": 7
+    },
     "",
     {
       "c": "#ebd400",
       "a": 4
     },
-    "Ms\n\n\nE\n\n\nEdge",
-    "Finder\n\n\nR",
-    "iTerm\n\n\nT",
-    "Linear\n\n\nY",
+    "Tele\n\n\nT\n\n\ngram",
     {
-      "c": "#c87e74"
+      "c": "#cccccc",
+      "a": 7
+    },
+    "",
+    {
+      "c": "#c87e74",
+      "a": 4
     },
     "Select\n←\n\nU\n\n\nLine",
     "Select\n←\n\nI\n\n\nWord",
@@ -86,7 +99,13 @@
     },
     "Ms\n\n\nA\n\n\nTeams",
     {
-      "f": 2
+      "f": 2,
+      "fa": [
+        0,
+        0,
+        0,
+        3
+      ]
     },
     "Logseq\n\n\nS",
     {
@@ -99,10 +118,15 @@
       "c": "#ebd400",
       "a": 4
     },
-    "Figma\n\n\nF",
-    "Neat\n\n\nG",
+    "Finder\n\n\nF",
     {
-      "c": "#c87e74"
+      "c": "#cccccc",
+      "a": 7
+    },
+    "",
+    {
+      "c": "#c87e74",
+      "a": 4
     },
     "Select\n←\n\nH\n\n\nChar",
     "Select\n↓\n\nJ\n\n\nChar",
@@ -136,9 +160,15 @@
     {
       "c": "#ebd400",
       "a": 4,
-      "f": 2
+      "f": 2,
+      "fa": [
+        4,
+        0,
+        0,
+        3
+      ]
     },
-    "Chrome\n\n\nC",
+    "Arc\n\n\nC",
     {
       "f": 3
     },

@@ -1077,10 +1077,10 @@
       "description": "Hyper Application",
       "manipulators": [
         {
-          "description": "command + e = Linear",
+          "description": "command + q = Linear",
           "type": "basic",
           "from": {
-            "key_code": "e",
+            "key_code": "q",
             "modifiers": {
               "mandatory": [
                 "left_command",
@@ -1098,10 +1098,10 @@
           ]
         },
         {
-          "description": "command + r = Finder",
+          "description": "command + f = Finder",
           "type": "basic",
           "from": {
-            "key_code": "r",
+            "key_code": "f",
             "modifiers": {
               "mandatory": [
                 "left_command",
@@ -1119,10 +1119,10 @@
           ]
         },
         {
-          "description": "command + t = iTerm",
+          "description": "command + e = iTerm",
           "type": "basic",
           "from": {
-            "key_code": "t",
+            "key_code": "e",
             "modifiers": {
               "mandatory": [
                 "left_command",
@@ -1182,10 +1182,10 @@
           ]
         },
         {
-          "description": "command + f = Figma",
+          "description": "command + w = Figma",
           "type": "basic",
           "from": {
-            "key_code": "f",
+            "key_code": "w",
             "modifiers": {
               "mandatory": [
                 "left_command",
@@ -1203,10 +1203,10 @@
           ]
         },
         {
-          "description": "command + g = Neat",
+          "description": "command + t = Telegram",
           "type": "basic",
           "from": {
-            "key_code": "g",
+            "key_code": "t",
             "modifiers": {
               "mandatory": [
                 "left_command",
@@ -1219,7 +1219,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a Neat"
+              "shell_command": "open -a Telegram"
             }
           ]
         },
